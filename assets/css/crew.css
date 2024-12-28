@@ -1,0 +1,125 @@
+body {
+  background-image: url(./../imgs/crew/background-crew-desktop.jpg);
+  background-size: cover;
+}
+.crew {
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  > h1 {
+    letter-spacing: 4px;
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+    span {
+      color: #979797;
+      font-weight: bold;
+      letter-spacing: normal;
+      margin-right: 10px;
+    }
+  }
+}
+.crew .crewBody {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  img {
+    width: 500px;
+  }
+
+  h1 {
+    font-family: bellefair;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 56px;
+  }
+
+  h2 {
+    font-family: bellefair;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #979797;
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+    font-family: barlow;
+    color: #d0d6f9;
+    width: 539px;
+  }
+}
+.crew .crewContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  div:first-child {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.crew .crewFooter {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 20px;
+
+  button {
+    background-color: transparent;
+    border: none;
+
+    circle {
+      transition: 300ms;
+    }
+  }
+  button:hover circle {
+    opacity: 0.5 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-image: url(./../imgs/crew/background-crew-mobile.jpg);
+  }
+  .crew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .crew .crewBody {
+    justify-content: center;
+    text-align: center;
+    img {
+      margin-top: 50px;
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+  }
+  .crew .crewContent {
+    position: static;
+    align-items: center;
+  }
+  .crew .crewFooter {
+    position: static;
+    margin-top: 100px;
+  }
+}
+@media (min-width: 631px) and (max-width: 1024px) {
+  body {
+    background-image: url(./../imgs/crew/background-crew-tablet.jpg);
+  }
+  .crew {
+    display: block;
+    text-align: start !important;
+  }
+}

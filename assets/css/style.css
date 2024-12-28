@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "barlow condensed";
+}
+button {
+  cursor: pointer;
+}
+.container {
+  margin: 0 100px;
+}
+
+nav {
+  height: 136px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navBody button {
+  display: none;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+}
+
+.logo img {
+  margin-left: 100px;
+  width: 48px;
+}
+
+.logo hr {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 125%;
+  width: 570px;
+  opacity: 0.5;
+}
+
+.navBody ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 736px;
+  height: 96px;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  align-items: center;
+  padding: 0 100px;
+}
+
+header li {
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navBody ul a,
+.sideBar a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-left: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sideBar {
+  transition: 300ms;
+  transform: translateX(100%);
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  width: 200px;
+}
+.sideBar button {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+}
+.sideBar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+nav a:hover {
+  border-bottom: solid 2px #797979;
+}
+.sideBar a:hover {
+  border-right: solid 2px #797979;
+}
+@media (max-width: 630px) {
+  body {
+    background-image: url(./../imgs/home/background-home-mobile.jpg);
+  }
+  .container {
+    margin: 0 20px;
+  }
+  .logo img {
+    margin-left: 20px;
+  }
+  .navBody ul {
+    display: none;
+  }
+  .navBody hr {
+    display: none;
+  }
+  .navBody button {
+    display: block;
+  }
+}
+
+@media (min-width: 631px) and (max-width: 1024px) {
+  .container {
+    margin: 0 50px;
+  }
+  .navBody ul {
+    width: max-content;
+    gap: 30px;
+  }
+  .logo img {
+    margin-left: 50px;
+  }
+  .navBody hr {
+    display: none;
+  }
+}
