@@ -10,8 +10,8 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-website-using-pure-js-tuBL-makjs)
+- Live Site URL: [Add live site URL here](https://mohamad-taha.github.io/Space-tourism/)
 
 ### Built with
 
@@ -23,4 +23,4 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 ## Author
 
 - Frontend Mentor - [@mohamad-taha](https://www.frontendmentor.io/profile/mohamad-taha)
-- github - [@mohamad-taha](https://www.twitter.com/yourusername)
+- github - [@mohamad-taha](https://www.twitter.com/mohamad-taha)
